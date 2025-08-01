@@ -63,7 +63,7 @@ echo -e "${GREEN}✅ کتابخانه‌های Python نصب شدند.${RESET}"
 
 
 TMP_FILE="/tmp/scraper.py"
-RAW_URL="https://raw.githubusercontent.com/mpythont/toppornsites-scraper/main/scraper.py"
+RAW_URL="https://raw.githubusercontent.com/mpythont/sites-scraper/main/scraper.py"
 
 echo -e "${YELLOW}🔄 دانلود اسکریپت از GitHub...${RESET}"
 wget -qO $TMP_FILE $RAW_URL && echo -e "${GREEN}✅ اسکریپت دانلود شد.${RESET}" || { echo -e "${RED}❌ دانلود اسکریپت با خطا مواجه شد.${RESET}"; exit 1; }

@@ -1,4 +1,4 @@
-# toppornsites-scraper
+# sites-scraper
 
 ## Quick Start
 

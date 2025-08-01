@@ -17,7 +17,7 @@ fi
 echo -e "${CYAN}${BOLD}🚀 شروع نصب TopPornSites Scraper...${RESET}"
 sleep 1
 
-apt update && apt install -y python3 python3-pip wget unzip curl
+apt update && apt install -y python3 python3-pip wget unzip curl python3.10-venv
 
 if ! command -v google-chrome &> /dev/null; then
     echo -e "${YELLOW}🔄 نصب Google Chrome...${RESET}"

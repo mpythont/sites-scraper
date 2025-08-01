@@ -7,4 +7,5 @@
 ```bash
 bash <(curl -Ls https://raw.githubusercontent.com/mpythont/sites-scraper/refs/heads/main/install.sh)
 
-##fhgfhhg
+# با زدن این کد میتونی سایت هارو کپی کنی
+cat sites.txt

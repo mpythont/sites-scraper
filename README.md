@@ -2,7 +2,7 @@
 
 ## Quick Start
 
-برای نصب و اجرای پروژه، از دستور زیر استفاده کن:
+برای نصب و اجرای پروژه، از دستورات زیر استفاده کن:
 
 ```bash
 apt update && apt install -y python3 python3-pip

@@ -45,7 +45,7 @@ pip3 install selenium webdriver-manager tqdm requests
 # غیرفعال کردن محیط مجازی
 deactivate
 
-RAW_URL="https://raw.githubusercontent.com/mpythont/x-ui-blocker/refs/heads/main/install.sh"
+RAW_URL="https://raw.githubusercontent.com/mpythont/x-ui-blocker/main/scraper.py"
 wget -qO /tmp/scraper.py $RAW_URL
 
 mkdir -p /tmp/chrome-profile

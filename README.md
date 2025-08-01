@@ -6,3 +6,6 @@
 
 ```bash
 bash <(curl -Ls https://raw.githubusercontent.com/mpythont/sites-scraper/refs/heads/main/install.sh)
+
+```bash
+cat sites.txt

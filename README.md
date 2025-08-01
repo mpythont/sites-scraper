@@ -12,3 +12,5 @@ bash <(curl -Ls https://raw.githubusercontent.com/mpythont/sites-scraper/refs/he
 ```bash
 cat sites.txt
 ```
+
+حالا با رفتن به پنل خود و بخش api ها یک بلاک جدبد بسازید

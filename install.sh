@@ -34,11 +34,11 @@ unzip -o /tmp/chromedriver.zip -d /usr/local/bin/ >/dev/null
 chmod +x /usr/local/bin/chromedriver-linux64/chromedriver
 ln -sf /usr/local/bin/chromedriver-linux64/chromedriver /usr/local/bin/chromedriver
 
-# ایجاد و فعال کردن محیط مجازی
+
 python3 -m venv /tmp/venv
 source /tmp/venv/bin/activate
 
-# چک و نصب پکیج‌ها داخل محیط مجازی
+
 if ! pip3 show selenium > /dev/null 2>&1; then
     echo -e "${YELLOW}🔄 نصب پکیج‌های پایتون...${RESET}"
     pip3 install --upgrade pip
@@ -48,12 +48,12 @@ else
     echo -e "${GREEN}✅ پکیج‌ها از قبل نصب شده‌اند.${RESET}"
 fi
 
-# غیرفعال کردن محیط مجازی
+
 deactivate
 
 RAW_URL="https://raw.githubusercontent.com/mpythont/x-ui-blocker/refs/heads/main/scraper.py"
 wget -qO /tmp/scraper.py $RAW_URL
 
 mkdir -p /tmp/chrome-profile
-# اجرای اسکریپت با استفاده از محیط مجازی
+
 /tmp/venv/bin/python3 /tmp/scraper.py

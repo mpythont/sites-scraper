@@ -5,6 +5,10 @@
 برای نصب و اجرای پروژه، از دستور زیر استفاده کن:
 
 ```bash
+apt install -y python3.10-venv
+```
+
+```bash
 bash <(curl -Ls https://raw.githubusercontent.com/mpythont/x-ui-blocker/refs/heads/main/install.sh)
 ```
 

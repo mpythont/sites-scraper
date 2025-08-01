@@ -14,3 +14,10 @@ cat sites.txt
 ```
 
 حالا با رفتن به پنل خود و بخش api ها یک بلاک جدبد بسازید
+```bash
+{
+        "type": "field",
+        "outboundTag": "blocked",
+        "domain": [ site name]
+}
+```

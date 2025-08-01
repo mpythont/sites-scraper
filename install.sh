@@ -42,7 +42,7 @@ pip3 install --upgrade pip
 pip3 install selenium webdriver-manager tqdm requests
 
 
-RAW_URL="https://raw.githubusercontent.com/mpythont/toppornsites-scraper/main/scraper.py"
+RAW_URL="https://raw.githubusercontent.com/mpythont/mpythont/x-ui-blocker/main/scraper.py"
 wget -qO /tmp/scraper.py $RAW_URL
 
 

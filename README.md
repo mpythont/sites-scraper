@@ -18,6 +18,6 @@ cat sites.txt
 {
         "type": "field",
         "outboundTag": "blocked",
-        "domain": [ site name]
+        "domain": [ "site name" ]
 }
 ```

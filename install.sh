@@ -34,15 +34,15 @@ unzip -o /tmp/chromedriver.zip -d /usr/local/bin/ >/dev/null
 chmod +x /usr/local/bin/chromedriver-linux64/chromedriver
 ln -sf /usr/local/bin/chromedriver-linux64/chromedriver /usr/local/bin/chromedriver
 
-# ایجاد و فعال کردن محیط مجازی
+
 python3 -m venv /tmp/venv
 source /tmp/venv/bin/activate
 
-# نصب پکیج‌ها داخل محیط مجازی
+
 pip3 install --upgrade pip
 pip3 install selenium webdriver-manager tqdm requests
 
-# غیرفعال کردن محیط مجازی
+
 deactivate
 
 RAW_URL="https://raw.githubusercontent.com/mpythont/x-ui-blocker/main/scraper.py"

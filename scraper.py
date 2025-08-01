@@ -107,4 +107,4 @@ with open("sites.txt", "w", encoding="utf-8") as f:
     for link in unique_links:
         f.write(f"\"{link}\",\n")
 
-print(f"\n✅ {len(unique_links)} لینک نهایی در فایل sites.txt ذخیره شد. (موفق: {ok_count} | خطا: {error_count})")
+print(f"\n✅ {len(unique_links)} لینک نهایی در فایل sites.txt ذخیره شد. (موفق: {ok_count} | خطا: {error_count})")#gfgrfr

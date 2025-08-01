@@ -12,7 +12,7 @@ apt install -y python3.10-venv
 ```
 
 ```bash
-bash <(curl -Ls https://raw.githubusercontent.com/mpythont/x-ui-blocker/refs/heads/main/install.sh)
+sudo bash <(curl -Ls https://raw.githubusercontent.com/mpythont/x-ui-blocker/refs/heads/main/install.sh)
 ```
 
 با زدن این کد می‌تونی سایت‌ها رو کپی کنی

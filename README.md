@@ -5,6 +5,9 @@
 برای نصب و اجرای پروژه، از دستور زیر استفاده کن:
 
 ```bash
+apt update && apt install -y python3 python3-pip
+```
+```bash
 apt install -y python3.10-venv
 ```
 

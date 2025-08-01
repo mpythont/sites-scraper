@@ -8,12 +8,20 @@ from selenium.webdriver.chrome.options import Options
 from urllib.parse import urljoin
 from tqdm import tqdm
 import re
+import os
+
+
+os.makedirs("/tmp/chrome-profile", exist_ok=True)
+
 
 options = Options()
+options.add_argument("--headless=new")  
 options.add_argument("--disable-blink-features=AutomationControlled")
 options.add_argument("--no-sandbox")
 options.add_argument("--disable-dev-shm-usage")
-options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36")
+options.add_argument("--disable-gpu")
+options.add_argument("--user-data-dir=/tmp/chrome-profile")
+options.add_argument("user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36")
 
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
@@ -38,7 +46,7 @@ for div in divs:
 
 all_hrefs = [urljoin(base_url, h) if not h.startswith("http") else h for h in all_hrefs]
 
-
+# 🟢 شمارنده‌ها
 ok_count = 0
 error_count = 0
 progress_count = 0
@@ -51,16 +59,13 @@ def smooth_progress_bar(pbar):
         if progress_count < ok_count + error_count:
             progress_count += 1
             pbar.update(1)
-        time.sleep(0.05)  
-
+        time.sleep(0.05)
     while progress_count < total:
         progress_count += 1
         pbar.update(1)
     pbar.close()
 
 pbar = tqdm(total=total, desc=f"🔗 Processing | OK:0 | ERR:0", colour="cyan", unit="link", ncols=120)
-
-
 threading.Thread(target=smooth_progress_bar, args=(pbar,), daemon=True).start()
 
 
@@ -77,6 +82,7 @@ for full_url in all_hrefs:
             if d.startswith("www."):
                 d = d[4:]
             links.append(d)
+
         ok_count += 1
     except:
         error_count += 1
